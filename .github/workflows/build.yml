@@ -26,7 +26,7 @@ jobs:
       - name: Build SDist
         run: pipx run --spec build pyproject-build --sdist
 
-      - uses: conda-incubator/setup-miniconda@v2
+      - uses: conda-incubator/setup-miniconda@v4
         with:
           environment-file: util/env/build-env.yml
           miniforge-version: latest
